@@ -1,6 +1,8 @@
 package ie.atu;
 
+
 import java.util.ArrayList;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -38,6 +40,9 @@ public class Arrays {
 
 
 
+
+
+
       try{
           Scanner myScan = new Scanner(System.in);
           System.out.println("Enter in value ");
@@ -47,7 +52,12 @@ public class Arrays {
 
       }
       catch(ArrayIndexOutOfBoundsException e) {
-          System.out.println("Out of bounds") ;
+
+          
+         
+
+          System.out.println("Out of bounds");
+
       }
 
     }
