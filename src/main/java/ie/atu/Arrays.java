@@ -39,7 +39,7 @@ public class Arrays {
         int indexValue = 0;
         for (int value: someArrayList){
             System.out.println("Elements at index " + indexValue + " : " + value);
-            indexValue++;
+            indexValue++ ;
 
         }
 
