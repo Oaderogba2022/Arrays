@@ -1,10 +1,15 @@
 package ie.atu;
 
+
+import java.util.ArrayList;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Arrays {
     public static void main(String[] args) {
+
+        ArrayList <Integer> myList = new ArrayList <>();
 
         int[] anArray = new int[10];
 
@@ -19,6 +24,7 @@ public class Arrays {
         anArray[7] = 800;
         anArray[8] = 900;
         anArray[9] = 1000;
+        loop(myList);
 
         System.out.println("Element at index 0: " + anArray[0]);
         System.out.println("Element at index 1: " + anArray[1]);
@@ -33,6 +39,10 @@ public class Arrays {
 
 
 
+
+
+
+
       try{
           Scanner myScan = new Scanner(System.in);
           System.out.println("Enter in value ");
@@ -42,8 +52,27 @@ public class Arrays {
 
       }
       catch(ArrayIndexOutOfBoundsException e) {
+
+          
+         
+
           System.out.println("Out of bounds");
+
       }
 
     }
+    public static void loop (ArrayList<Integer> someArrayList)
+    {
+        int indexValue = 0;
+        for (int value: someArrayList){
+            System.out.println("Elements at index" + " : " + indexValue );
+            indexValue++ ;
+
+        }
+
+
+
+    }
+
+
 }
